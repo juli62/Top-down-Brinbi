@@ -5,17 +5,18 @@ extends KinematicBody2D
 
 onready var _animated_sprite = $AnimatedSprite
 
-func _process(delta):
+func _process(_delta): 
+	
 	if Input.is_action_pressed("right"):
-		_animated_sprite.play("walk")
+			_animated_sprite.play("walk")
 	elif Input.is_action_pressed("left"):
-		_animated_sprite.play("walk")
+			_animated_sprite.play("walk")
 	elif Input.is_action_pressed("up"):
-		_animated_sprite.play("walk")
+			_animated_sprite.play("walk")
 	elif Input.is_action_pressed("down"):
-		_animated_sprite.play("walk")
+			_animated_sprite.play("walk")
 	else:
-		_animated_sprite.play("default")
+			_animated_sprite.play("default")
 
 export (int) var speed = 200
 
@@ -38,5 +39,6 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	velocity = move_and_slide(velocity)
+	velocity = move_and_slide(velocity) * delta
+	
 
