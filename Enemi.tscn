@@ -1,0 +1,84 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Avenixel-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Dbox.png" type="Texture" id=2]
+[ext_resource path="res://text ind1.png" type="Texture" id=3]
+[ext_resource path="res://text ind2.png" type="Texture" id=4]
+[ext_resource path="res://enemi.gd" type="Script" id=5]
+[ext_resource path="res://Sounds/voice.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "bipbop",
+"speed": 5.0
+} ]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dbox" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1027.68
+margin_top = 4.23785
+margin_right = 1027.68
+margin_bottom = 4.23785
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Dbox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 89.0855
+margin_top = 359.359
+margin_right = 89.0854
+margin_bottom = 359.359
+rect_scale = Vector2( 4.33746, 3.84422 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Dbox"]
+margin_left = 140.0
+margin_top = 396.0
+margin_right = 874.0
+margin_bottom = 569.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.0156863, 0.827451, 0.815686, 1 )
+bbcode_enabled = true
+bbcode_text = "Hello!!! AAH!"
+text = "Hello!!! AAH!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Dbox"]
+
+[node name="Indic" type="AnimatedSprite" parent="Dbox"]
+visible = false
+position = Vector2( 853.882, 555.558 )
+frames = SubResource( 2 )
+animation = "bipbop"
+frame = 1
+playing = true
+
+[node name="Voice1" type="AudioStreamPlayer" parent="Dbox"]
+stream = ExtResource( 6 )
+volume_db = -11.199
+
+[connection signal="tween_all_completed" from="Dbox/Tween" to="Dbox" method="_on_Tween_tween_all_completed"]
+[connection signal="tween_completed" from="Dbox/Tween" to="Dbox" method="_on_Tween_tween_completed"]
+[connection signal="tween_step" from="Dbox/Tween" to="Dbox" method="_on_Tween_tween_step"]

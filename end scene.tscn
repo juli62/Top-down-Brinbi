@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 395.553
+margin_top = 106.38
+margin_right = 435.553
+margin_bottom = 146.38
+rect_scale = Vector2( 6.84, 6.84 )
+text = "gamuh over"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Avenixel-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Area2D2.gd" type="Script" id=2]
+[ext_resource path="res://Sounds/sound.wav" type="AudioStream" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 37.461
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.37842, 0 )
+scale = Vector2( 1.30627, 1.30627 )
+shape = SubResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = -27.4718
+margin_top = -45.0304
+margin_right = 21.5282
+margin_bottom = -29.0304
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.843137, 0.823529, 0.823529, 1 )
+text = "Speak [E]"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Area2D_body_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Area2D_mouse_exited"]

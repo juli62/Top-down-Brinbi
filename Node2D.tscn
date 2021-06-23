@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Tilemap/Wall.png" type="Texture" id=1]
 [ext_resource path="res://Tilemap/floor.png" type="Texture" id=2]
@@ -29,6 +29,13 @@
 [ext_resource path="res://floor-export.png" type="Texture" id=27]
 [ext_resource path="res://guyi-export-export.png" type="Texture" id=28]
 [ext_resource path="res://Tilemap/FLORR REWORKED.png" type="Texture" id=29]
+[ext_resource path="res://Sign.tscn" type="PackedScene" id=30]
+[ext_resource path="res://FLORR REWORKED 2.0.png" type="Texture" id=31]
+[ext_resource path="res://Floor shadows tile map.png" type="Texture" id=32]
+[ext_resource path="res://Area2D2.gd" type="Script" id=33]
+[ext_resource path="res://Camera2D.gd" type="Script" id=34]
+[ext_resource path="res://Fight/Enemy.png" type="Texture" id=35]
+[ext_resource path="res://enemu.tscn" type="PackedScene" id=36]
 
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/brinbi bak-export.png-0f39192af41acfd8cf994d12bfeedd98.stex"
@@ -160,160 +167,6 @@ load_path = "res://.import/brinbi bak-export.png-0f39192af41acfd8cf994d12bfeedd9
 9/shape_one_way_margin = 0.0
 9/shapes = [  ]
 9/z_index = 0
-10/name = "tilemap .png 10"
-10/texture = ExtResource( 26 )
-10/tex_offset = Vector2( 0, 0 )
-10/modulate = Color( 1, 1, 1, 1 )
-10/region = Rect2( 416, 96, 64, 64 )
-10/tile_mode = 0
-10/occluder_offset = Vector2( 0, 0 )
-10/navigation_offset = Vector2( 0, 0 )
-10/shape_offset = Vector2( 0, 0 )
-10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape_one_way = false
-10/shape_one_way_margin = 0.0
-10/shapes = [  ]
-10/z_index = 0
-11/name = "tilemap .png 11"
-11/texture = ExtResource( 26 )
-11/tex_offset = Vector2( 0, 0 )
-11/modulate = Color( 1, 1, 1, 1 )
-11/region = Rect2( 448, 0, 64, 64 )
-11/tile_mode = 0
-11/occluder_offset = Vector2( 0, 0 )
-11/navigation_offset = Vector2( 0, 0 )
-11/shape_offset = Vector2( 0, 0 )
-11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-11/shape_one_way = false
-11/shape_one_way_margin = 0.0
-11/shapes = [  ]
-11/z_index = 0
-12/name = "tilemap .png 12"
-12/texture = ExtResource( 26 )
-12/tex_offset = Vector2( 0, 0 )
-12/modulate = Color( 1, 1, 1, 1 )
-12/region = Rect2( 320, 0, 64, 64 )
-12/tile_mode = 0
-12/occluder_offset = Vector2( 0, 0 )
-12/navigation_offset = Vector2( 0, 0 )
-12/shape_offset = Vector2( 0, 0 )
-12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape_one_way = false
-12/shape_one_way_margin = 0.0
-12/shapes = [  ]
-12/z_index = 0
-13/name = "tilemap .png 13"
-13/texture = ExtResource( 26 )
-13/tex_offset = Vector2( 0, 0 )
-13/modulate = Color( 1, 1, 1, 1 )
-13/region = Rect2( 224, 32, 64, 64 )
-13/tile_mode = 0
-13/occluder_offset = Vector2( 0, 0 )
-13/navigation_offset = Vector2( 0, 0 )
-13/shape_offset = Vector2( 0, 0 )
-13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-13/shape_one_way = false
-13/shape_one_way_margin = 0.0
-13/shapes = [  ]
-13/z_index = 0
-14/name = "tilemap .png 14"
-14/texture = ExtResource( 26 )
-14/tex_offset = Vector2( 0, 0 )
-14/modulate = Color( 1, 1, 1, 1 )
-14/region = Rect2( 96, 32, 64, 64 )
-14/tile_mode = 0
-14/occluder_offset = Vector2( 0, 0 )
-14/navigation_offset = Vector2( 0, 0 )
-14/shape_offset = Vector2( 0, 0 )
-14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-14/shape_one_way = false
-14/shape_one_way_margin = 0.0
-14/shapes = [  ]
-14/z_index = 0
-15/name = "tilemap .png 15"
-15/texture = ExtResource( 26 )
-15/tex_offset = Vector2( 0, 0 )
-15/modulate = Color( 1, 1, 1, 1 )
-15/region = Rect2( 416, 192, 64, 64 )
-15/tile_mode = 0
-15/occluder_offset = Vector2( 0, 0 )
-15/navigation_offset = Vector2( 0, 0 )
-15/shape_offset = Vector2( 0, 0 )
-15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-15/shape_one_way = false
-15/shape_one_way_margin = 0.0
-15/shapes = [  ]
-15/z_index = 0
-16/name = "tilemap .png 16"
-16/texture = ExtResource( 26 )
-16/tex_offset = Vector2( 0, 0 )
-16/modulate = Color( 1, 1, 1, 1 )
-16/region = Rect2( 320, 128, 64, 64 )
-16/tile_mode = 0
-16/occluder_offset = Vector2( 0, 0 )
-16/navigation_offset = Vector2( 0, 0 )
-16/shape_offset = Vector2( 0, 0 )
-16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-16/shape_one_way = false
-16/shape_one_way_margin = 0.0
-16/shapes = [  ]
-16/z_index = 0
-17/name = "tilemap .png 17"
-17/texture = ExtResource( 26 )
-17/tex_offset = Vector2( 0, 0 )
-17/modulate = Color( 1, 1, 1, 1 )
-17/region = Rect2( 224, 192, 64, 64 )
-17/tile_mode = 0
-17/occluder_offset = Vector2( 0, 0 )
-17/navigation_offset = Vector2( 0, 0 )
-17/shape_offset = Vector2( 0, 0 )
-17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-17/shape_one_way = false
-17/shape_one_way_margin = 0.0
-17/shapes = [  ]
-17/z_index = 0
-18/name = "tilemap .png 18"
-18/texture = ExtResource( 26 )
-18/tex_offset = Vector2( 0, 0 )
-18/modulate = Color( 1, 1, 1, 1 )
-18/region = Rect2( 128, 192, 64, 64 )
-18/tile_mode = 0
-18/occluder_offset = Vector2( 0, 0 )
-18/navigation_offset = Vector2( 0, 0 )
-18/shape_offset = Vector2( 0, 0 )
-18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-18/shape_one_way = false
-18/shape_one_way_margin = 0.0
-18/shapes = [  ]
-18/z_index = 0
-19/name = "tilemap .png 19"
-19/texture = ExtResource( 26 )
-19/tex_offset = Vector2( 0, 0 )
-19/modulate = Color( 1, 1, 1, 1 )
-19/region = Rect2( 32, 160, 64, 64 )
-19/tile_mode = 0
-19/occluder_offset = Vector2( 0, 0 )
-19/navigation_offset = Vector2( 0, 0 )
-19/shape_offset = Vector2( 0, 0 )
-19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-19/shape_one_way = false
-19/shape_one_way_margin = 0.0
-19/shapes = [  ]
-19/z_index = 0
-20/name = "tilemap .png 20"
-20/texture = ExtResource( 26 )
-20/tex_offset = Vector2( 0, 0 )
-20/modulate = Color( 1, 1, 1, 1 )
-20/region = Rect2( 160, 96, 64, 64 )
-20/tile_mode = 0
-20/occluder_offset = Vector2( 0, 0 )
-20/navigation_offset = Vector2( 0, 0 )
-20/shape_offset = Vector2( 0, 0 )
-20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-20/shape_one_way = false
-20/shape_one_way_margin = 0.0
-20/shapes = [  ]
-20/z_index = 0
 34/name = "floor-export.png 34"
 34/texture = ExtResource( 27 )
 34/tex_offset = Vector2( 0, 0 )
@@ -748,8 +601,612 @@ load_path = "res://.import/brinbi bak-export.png-0f39192af41acfd8cf994d12bfeedd9
 64/shape_one_way_margin = 0.0
 64/shapes = [  ]
 64/z_index = 0
+65/name = "FLORR REWORKED 2.0.png 65"
+65/texture = ExtResource( 31 )
+65/tex_offset = Vector2( 0, 0 )
+65/modulate = Color( 1, 1, 1, 1 )
+65/region = Rect2( 0, 0, 64, 64 )
+65/tile_mode = 0
+65/occluder_offset = Vector2( 0, 0 )
+65/navigation_offset = Vector2( 0, 0 )
+65/shape_offset = Vector2( 0, 0 )
+65/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+65/shape_one_way = false
+65/shape_one_way_margin = 0.0
+65/shapes = [  ]
+65/z_index = 0
+66/name = "FLORR REWORKED 2.0.png 66"
+66/texture = ExtResource( 31 )
+66/tex_offset = Vector2( 0, 0 )
+66/modulate = Color( 1, 1, 1, 1 )
+66/region = Rect2( 64, 0, 64, 64 )
+66/tile_mode = 0
+66/occluder_offset = Vector2( 0, 0 )
+66/navigation_offset = Vector2( 0, 0 )
+66/shape_offset = Vector2( 0, 0 )
+66/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+66/shape_one_way = false
+66/shape_one_way_margin = 0.0
+66/shapes = [  ]
+66/z_index = 0
+67/name = "FLORR REWORKED 2.0.png 67"
+67/texture = ExtResource( 31 )
+67/tex_offset = Vector2( 0, 0 )
+67/modulate = Color( 1, 1, 1, 1 )
+67/region = Rect2( 128, 0, 64, 64 )
+67/tile_mode = 0
+67/occluder_offset = Vector2( 0, 0 )
+67/navigation_offset = Vector2( 0, 0 )
+67/shape_offset = Vector2( 0, 0 )
+67/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+67/shape_one_way = false
+67/shape_one_way_margin = 0.0
+67/shapes = [  ]
+67/z_index = 0
+68/name = "FLORR REWORKED 2.0.png 68"
+68/texture = ExtResource( 31 )
+68/tex_offset = Vector2( 0, 0 )
+68/modulate = Color( 1, 1, 1, 1 )
+68/region = Rect2( 192, 0, 64, 64 )
+68/tile_mode = 0
+68/occluder_offset = Vector2( 0, 0 )
+68/navigation_offset = Vector2( 0, 0 )
+68/shape_offset = Vector2( 0, 0 )
+68/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+68/shape_one_way = false
+68/shape_one_way_margin = 0.0
+68/shapes = [  ]
+68/z_index = 0
+69/name = "FLORR REWORKED 2.0.png 69"
+69/texture = ExtResource( 31 )
+69/tex_offset = Vector2( 0, 0 )
+69/modulate = Color( 1, 1, 1, 1 )
+69/region = Rect2( 256, 0, 64, 64 )
+69/tile_mode = 0
+69/occluder_offset = Vector2( 0, 0 )
+69/navigation_offset = Vector2( 0, 0 )
+69/shape_offset = Vector2( 0, 0 )
+69/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+69/shape_one_way = false
+69/shape_one_way_margin = 0.0
+69/shapes = [  ]
+69/z_index = 0
+70/name = "FLORR REWORKED 2.0.png 70"
+70/texture = ExtResource( 31 )
+70/tex_offset = Vector2( 0, 0 )
+70/modulate = Color( 1, 1, 1, 1 )
+70/region = Rect2( 320, 0, 64, 64 )
+70/tile_mode = 0
+70/occluder_offset = Vector2( 0, 0 )
+70/navigation_offset = Vector2( 0, 0 )
+70/shape_offset = Vector2( 0, 0 )
+70/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+70/shape_one_way = false
+70/shape_one_way_margin = 0.0
+70/shapes = [  ]
+70/z_index = 0
+71/name = "FLORR REWORKED 2.0.png 71"
+71/texture = ExtResource( 31 )
+71/tex_offset = Vector2( 0, 0 )
+71/modulate = Color( 1, 1, 1, 1 )
+71/region = Rect2( 0, 64, 64, 64 )
+71/tile_mode = 0
+71/occluder_offset = Vector2( 0, 0 )
+71/navigation_offset = Vector2( 0, 0 )
+71/shape_offset = Vector2( 0, 0 )
+71/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+71/shape_one_way = false
+71/shape_one_way_margin = 0.0
+71/shapes = [  ]
+71/z_index = 0
+72/name = "FLORR REWORKED 2.0.png 72"
+72/texture = ExtResource( 31 )
+72/tex_offset = Vector2( 0, 0 )
+72/modulate = Color( 1, 1, 1, 1 )
+72/region = Rect2( 64, 64, 64, 64 )
+72/tile_mode = 0
+72/occluder_offset = Vector2( 0, 0 )
+72/navigation_offset = Vector2( 0, 0 )
+72/shape_offset = Vector2( 0, 0 )
+72/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+72/shape_one_way = false
+72/shape_one_way_margin = 0.0
+72/shapes = [  ]
+72/z_index = 0
+73/name = "FLORR REWORKED 2.0.png 73"
+73/texture = ExtResource( 31 )
+73/tex_offset = Vector2( 0, 0 )
+73/modulate = Color( 1, 1, 1, 1 )
+73/region = Rect2( 128, 64, 64, 64 )
+73/tile_mode = 0
+73/occluder_offset = Vector2( 0, 0 )
+73/navigation_offset = Vector2( 0, 0 )
+73/shape_offset = Vector2( 0, 0 )
+73/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+73/shape_one_way = false
+73/shape_one_way_margin = 0.0
+73/shapes = [  ]
+73/z_index = 0
+74/name = "FLORR REWORKED 2.0.png 74"
+74/texture = ExtResource( 31 )
+74/tex_offset = Vector2( 0, 0 )
+74/modulate = Color( 1, 1, 1, 1 )
+74/region = Rect2( 192, 64, 64, 64 )
+74/tile_mode = 0
+74/occluder_offset = Vector2( 0, 0 )
+74/navigation_offset = Vector2( 0, 0 )
+74/shape_offset = Vector2( 0, 0 )
+74/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+74/shape_one_way = false
+74/shape_one_way_margin = 0.0
+74/shapes = [  ]
+74/z_index = 0
+75/name = "FLORR REWORKED 2.0.png 75"
+75/texture = ExtResource( 31 )
+75/tex_offset = Vector2( 0, 0 )
+75/modulate = Color( 1, 1, 1, 1 )
+75/region = Rect2( 256, 64, 64, 64 )
+75/tile_mode = 0
+75/occluder_offset = Vector2( 0, 0 )
+75/navigation_offset = Vector2( 0, 0 )
+75/shape_offset = Vector2( 0, 0 )
+75/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+75/shape_one_way = false
+75/shape_one_way_margin = 0.0
+75/shapes = [  ]
+75/z_index = 0
+76/name = "FLORR REWORKED 2.0.png 76"
+76/texture = ExtResource( 31 )
+76/tex_offset = Vector2( 0, 0 )
+76/modulate = Color( 1, 1, 1, 1 )
+76/region = Rect2( 320, 64, 64, 64 )
+76/tile_mode = 0
+76/occluder_offset = Vector2( 0, 0 )
+76/navigation_offset = Vector2( 0, 0 )
+76/shape_offset = Vector2( 0, 0 )
+76/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+76/shape_one_way = false
+76/shape_one_way_margin = 0.0
+76/shapes = [  ]
+76/z_index = 0
+77/name = "FLORR REWORKED 2.0.png 77"
+77/texture = ExtResource( 31 )
+77/tex_offset = Vector2( 0, 0 )
+77/modulate = Color( 1, 1, 1, 1 )
+77/region = Rect2( 0, 128, 64, 64 )
+77/tile_mode = 0
+77/occluder_offset = Vector2( 0, 0 )
+77/navigation_offset = Vector2( 0, 0 )
+77/shape_offset = Vector2( 0, 0 )
+77/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+77/shape_one_way = false
+77/shape_one_way_margin = 0.0
+77/shapes = [  ]
+77/z_index = 0
+78/name = "FLORR REWORKED 2.0.png 78"
+78/texture = ExtResource( 31 )
+78/tex_offset = Vector2( 0, 0 )
+78/modulate = Color( 1, 1, 1, 1 )
+78/region = Rect2( 64, 128, 64, 64 )
+78/tile_mode = 0
+78/occluder_offset = Vector2( 0, 0 )
+78/navigation_offset = Vector2( 0, 0 )
+78/shape_offset = Vector2( 0, 0 )
+78/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+78/shape_one_way = false
+78/shape_one_way_margin = 0.0
+78/shapes = [  ]
+78/z_index = 0
+79/name = "FLORR REWORKED 2.0.png 79"
+79/texture = ExtResource( 31 )
+79/tex_offset = Vector2( 0, 0 )
+79/modulate = Color( 1, 1, 1, 1 )
+79/region = Rect2( 128, 128, 64, 64 )
+79/tile_mode = 0
+79/occluder_offset = Vector2( 0, 0 )
+79/navigation_offset = Vector2( 0, 0 )
+79/shape_offset = Vector2( 0, 0 )
+79/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+79/shape_one_way = false
+79/shape_one_way_margin = 0.0
+79/shapes = [  ]
+79/z_index = 0
+80/name = "FLORR REWORKED 2.0.png 80"
+80/texture = ExtResource( 31 )
+80/tex_offset = Vector2( 0, 0 )
+80/modulate = Color( 1, 1, 1, 1 )
+80/region = Rect2( 192, 128, 64, 64 )
+80/tile_mode = 0
+80/occluder_offset = Vector2( 0, 0 )
+80/navigation_offset = Vector2( 0, 0 )
+80/shape_offset = Vector2( 0, 0 )
+80/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+80/shape_one_way = false
+80/shape_one_way_margin = 0.0
+80/shapes = [  ]
+80/z_index = 0
+81/name = "FLORR REWORKED 2.0.png 81"
+81/texture = ExtResource( 31 )
+81/tex_offset = Vector2( 0, 0 )
+81/modulate = Color( 1, 1, 1, 1 )
+81/region = Rect2( 256, 128, 64, 64 )
+81/tile_mode = 0
+81/occluder_offset = Vector2( 0, 0 )
+81/navigation_offset = Vector2( 0, 0 )
+81/shape_offset = Vector2( 0, 0 )
+81/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+81/shape_one_way = false
+81/shape_one_way_margin = 0.0
+81/shapes = [  ]
+81/z_index = 0
+82/name = "FLORR REWORKED 2.0.png 82"
+82/texture = ExtResource( 31 )
+82/tex_offset = Vector2( 0, 0 )
+82/modulate = Color( 1, 1, 1, 1 )
+82/region = Rect2( 320, 128, 64, 64 )
+82/tile_mode = 0
+82/occluder_offset = Vector2( 0, 0 )
+82/navigation_offset = Vector2( 0, 0 )
+82/shape_offset = Vector2( 0, 0 )
+82/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+82/shape_one_way = false
+82/shape_one_way_margin = 0.0
+82/shapes = [  ]
+82/z_index = 0
+83/name = "tilemap .png 83"
+83/texture = ExtResource( 26 )
+83/tex_offset = Vector2( 0, 0 )
+83/modulate = Color( 1, 1, 1, 1 )
+83/region = Rect2( 32, 96, 64, 64 )
+83/tile_mode = 0
+83/occluder_offset = Vector2( 0, 0 )
+83/navigation_offset = Vector2( 0, 0 )
+83/shape_offset = Vector2( 0, 0 )
+83/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+83/shape_one_way = false
+83/shape_one_way_margin = 0.0
+83/shapes = [  ]
+83/z_index = 0
+84/name = "tilemap .png 84"
+84/texture = ExtResource( 26 )
+84/tex_offset = Vector2( 0, 0 )
+84/modulate = Color( 1, 1, 1, 1 )
+84/region = Rect2( 224, 32, 64, 64 )
+84/tile_mode = 0
+84/occluder_offset = Vector2( 0, 0 )
+84/navigation_offset = Vector2( 0, 0 )
+84/shape_offset = Vector2( 0, 0 )
+84/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+84/shape_one_way = false
+84/shape_one_way_margin = 0.0
+84/shapes = [  ]
+84/z_index = 0
+85/name = "tilemap .png 85"
+85/texture = ExtResource( 26 )
+85/tex_offset = Vector2( 0, 0 )
+85/modulate = Color( 1, 1, 1, 1 )
+85/region = Rect2( 160, 96, 64, 64 )
+85/tile_mode = 0
+85/occluder_offset = Vector2( 0, 0 )
+85/navigation_offset = Vector2( 0, 0 )
+85/shape_offset = Vector2( 0, 0 )
+85/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+85/shape_one_way = false
+85/shape_one_way_margin = 0.0
+85/shapes = [  ]
+85/z_index = 0
+86/name = "tilemap .png 86"
+86/texture = ExtResource( 26 )
+86/tex_offset = Vector2( 0, 0 )
+86/modulate = Color( 1, 1, 1, 1 )
+86/region = Rect2( 288, 96, 64, 64 )
+86/tile_mode = 0
+86/occluder_offset = Vector2( 0, 0 )
+86/navigation_offset = Vector2( 0, 0 )
+86/shape_offset = Vector2( 0, 0 )
+86/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+86/shape_one_way = false
+86/shape_one_way_margin = 0.0
+86/shapes = [  ]
+86/z_index = 0
+87/name = "tilemap .png 87"
+87/texture = ExtResource( 26 )
+87/tex_offset = Vector2( 0, 0 )
+87/modulate = Color( 1, 1, 1, 1 )
+87/region = Rect2( 384, 64, 64, 64 )
+87/tile_mode = 0
+87/occluder_offset = Vector2( 0, 0 )
+87/navigation_offset = Vector2( 0, 0 )
+87/shape_offset = Vector2( 0, 0 )
+87/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+87/shape_one_way = false
+87/shape_one_way_margin = 0.0
+87/shapes = [  ]
+87/z_index = 0
+88/name = "tilemap .png 88"
+88/texture = ExtResource( 26 )
+88/tex_offset = Vector2( 0, 0 )
+88/modulate = Color( 1, 1, 1, 1 )
+88/region = Rect2( 512, 64, 64, 64 )
+88/tile_mode = 0
+88/occluder_offset = Vector2( 0, 0 )
+88/navigation_offset = Vector2( 0, 0 )
+88/shape_offset = Vector2( 0, 0 )
+88/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+88/shape_one_way = false
+88/shape_one_way_margin = 0.0
+88/shapes = [  ]
+88/z_index = 0
+89/name = "tilemap .png 89"
+89/texture = ExtResource( 26 )
+89/tex_offset = Vector2( 0, 0 )
+89/modulate = Color( 1, 1, 1, 1 )
+89/region = Rect2( 384, 192, 64, 64 )
+89/tile_mode = 0
+89/occluder_offset = Vector2( 0, 0 )
+89/navigation_offset = Vector2( 0, 0 )
+89/shape_offset = Vector2( 0, 0 )
+89/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+89/shape_one_way = false
+89/shape_one_way_margin = 0.0
+89/shapes = [  ]
+89/z_index = 0
+90/name = "tilemap .png 90"
+90/texture = ExtResource( 26 )
+90/tex_offset = Vector2( 0, 0 )
+90/modulate = Color( 1, 1, 1, 1 )
+90/region = Rect2( 480, 256, 64, 64 )
+90/tile_mode = 0
+90/occluder_offset = Vector2( 0, 0 )
+90/navigation_offset = Vector2( 0, 0 )
+90/shape_offset = Vector2( 0, 0 )
+90/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+90/shape_one_way = false
+90/shape_one_way_margin = 0.0
+90/shapes = [  ]
+90/z_index = 0
+91/name = "tilemap .png 91"
+91/texture = ExtResource( 26 )
+91/tex_offset = Vector2( 0, 0 )
+91/modulate = Color( 1, 1, 1, 1 )
+91/region = Rect2( 288, 256, 64, 64 )
+91/tile_mode = 0
+91/occluder_offset = Vector2( 0, 0 )
+91/navigation_offset = Vector2( 0, 0 )
+91/shape_offset = Vector2( 0, 0 )
+91/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+91/shape_one_way = false
+91/shape_one_way_margin = 0.0
+91/shapes = [  ]
+91/z_index = 0
+92/name = "tilemap .png 92"
+92/texture = ExtResource( 26 )
+92/tex_offset = Vector2( 0, 0 )
+92/modulate = Color( 1, 1, 1, 1 )
+92/region = Rect2( 192, 256, 64, 64 )
+92/tile_mode = 0
+92/occluder_offset = Vector2( 0, 0 )
+92/navigation_offset = Vector2( 0, 0 )
+92/shape_offset = Vector2( 0, 0 )
+92/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+92/shape_one_way = false
+92/shape_one_way_margin = 0.0
+92/shapes = [  ]
+92/z_index = 0
+93/name = "tilemap .png 93"
+93/texture = ExtResource( 26 )
+93/tex_offset = Vector2( 0, 0 )
+93/modulate = Color( 1, 1, 1, 1 )
+93/region = Rect2( 96, 224, 64, 64 )
+93/tile_mode = 0
+93/occluder_offset = Vector2( 0, 0 )
+93/navigation_offset = Vector2( 0, 0 )
+93/shape_offset = Vector2( 0, 0 )
+93/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+93/shape_one_way = false
+93/shape_one_way_margin = 0.0
+93/shapes = [  ]
+93/z_index = 0
+94/name = "tilemap .png 94"
+94/texture = ExtResource( 26 )
+94/tex_offset = Vector2( 0, 0 )
+94/modulate = Color( 1, 1, 1, 1 )
+94/region = Rect2( 224, 160, 64, 64 )
+94/tile_mode = 0
+94/occluder_offset = Vector2( 0, 0 )
+94/navigation_offset = Vector2( 0, 0 )
+94/shape_offset = Vector2( 0, 0 )
+94/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+94/shape_one_way = false
+94/shape_one_way_margin = 0.0
+94/shapes = [  ]
+94/z_index = 0
+95/name = "tilemap .png 95"
+95/texture = ExtResource( 26 )
+95/tex_offset = Vector2( 0, 0 )
+95/modulate = Color( 1, 1, 1, 1 )
+95/region = Rect2( 480, 160, 64, 64 )
+95/tile_mode = 0
+95/occluder_offset = Vector2( 0, 0 )
+95/navigation_offset = Vector2( 0, 0 )
+95/shape_offset = Vector2( 0, 0 )
+95/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+95/shape_one_way = false
+95/shape_one_way_margin = 0.0
+95/shapes = [  ]
+95/z_index = 0
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="TileSet" id=3]
+0/name = "Floor shadows tile map.png 0"
+0/texture = ExtResource( 32 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Floor shadows tile map.png 1"
+1/texture = ExtResource( 32 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Floor shadows tile map.png 2"
+2/texture = ExtResource( 32 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 128, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Floor shadows tile map.png 3"
+3/texture = ExtResource( 32 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 256, 64, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Floor shadows tile map.png 4"
+4/texture = ExtResource( 32 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 192, 64, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Floor shadows tile map.png 5"
+5/texture = ExtResource( 32 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 128, 64, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Floor shadows tile map.png 6"
+6/texture = ExtResource( 32 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 64, 64, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Floor shadows tile map.png 7"
+7/texture = ExtResource( 32 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 64, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Floor shadows tile map.png 8"
+8/texture = ExtResource( 32 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 128, 64, 64 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Floor shadows tile map.png 9"
+9/texture = ExtResource( 32 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 64, 128, 64, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "Floor shadows tile map.png 10"
+10/texture = ExtResource( 32 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 128, 128, 64, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "Floor shadows tile map.png 11"
+11/texture = ExtResource( 32 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 192, 128, 64, 64 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ) ],
 "loop": true,
@@ -762,33 +1219,42 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 18.6668, 25.3799 )
 
-[sub_resource type="CircleShape2D" id=5]
-radius = 36.0278
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 501.88, 23.4574 )
+[sub_resource type="CircleShape2D" id=6]
+radius = 39.2348
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 94.7619, 46.0105 )
+extents = Vector2( 10.7457, 38.6545 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 29.0777, 306.785 )
+extents = Vector2( 10, 46.5371 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 509.521, 19.4526 )
+extents = Vector2( 501.88, 23.4574 )
 
 [sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 94.7619, 46.0105 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 29.0777, 306.785 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 1378.18, 19.4526 )
+
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 29.5638, 265.047 )
 
-[sub_resource type="TileSet" id=11]
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 29.772, 215.432 )
+
+[sub_resource type="TileSet" id=15]
 0/name = "tilemap .png 0"
 0/texture = ExtResource( 26 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 128, 192, 64, 64 )
+0/region = Rect2( 192, 256, 64, 64 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -798,6 +1264,81 @@ extents = Vector2( 29.5638, 265.047 )
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
+1/name = "tilemap .png 1"
+1/texture = ExtResource( 26 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 32, 96, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "tilemap .png 2"
+2/texture = ExtResource( 26 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 224, 32, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=16]
+radius = 24.9202
+height = 0.0
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 35 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 35 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 35 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 35 )
+region = Rect2( 256, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 35 )
+region = Rect2( 384, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 35 )
+region = Rect2( 128, 0, 128, 128 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 128, 128 )
+
+[sub_resource type="SpriteFrames" id=25]
+animations = [ {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 6.25659, 12.7319 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -809,28 +1350,39 @@ texture = SubResource( 1 )
 position = Vector2( -511.852, -299.682 )
 tile_set = SubResource( 2 )
 format = 1
-tile_data = PoolIntArray( 65536, 13, 0, 65537, 9, 0, 65538, 9, 0, 65539, 14, 0, 65541, 13, 0, 65542, 9, 0, 65543, 9, 0, 65544, 9, 0, 65545, 9, 0, 65546, 9, 0, 65547, 9, 0, 65548, 9, 0, 65549, 9, 0, 65550, 9, 0, 65551, 14, 0, 131072, 12, 0, 131073, 50, 0, 131074, 53, 0, 131075, 19, 0, 131076, 20, 0, 131077, 16, 0, 131078, 38, 0, 131079, 50, 0, 131080, 40, 0, 131081, 44, 0, 131082, 51, 0, 131083, 55, 0, 131084, 48, 0, 131085, 49, 0, 131086, 46, 0, 131087, 11, 0, 196608, 12, 0, 196609, 51, 0, 196610, 52, 0, 196611, 49, 0, 196612, 44, 0, 196613, 42, 0, 196614, 41, 0, 196615, 43, 0, 196616, 38, 0, 196617, 47, 0, 196618, 52, 0, 196619, 53, 0, 196620, 56, 0, 196621, 47, 0, 196622, 47, 0, 196623, 11, 0, 262144, 12, 0, 262145, 42, 0, 262146, 54, 0, 262147, 49, 0, 262148, 40, 0, 262149, 53, 0, 262150, 51, 0, 262151, 50, 0, 262152, 53, 0, 262153, 48, 0, 262154, 53, 0, 262155, 37, 0, 262156, 42, 0, 262157, 50, 0, 262158, 50, 0, 262159, 11, 0, 327680, 12, 0, 327681, 40, 0, 327682, 38, 0, 327683, 51, 0, 327684, 47, 0, 327685, 39, 0, 327686, 42, 0, 327687, 45, 0, 327688, 52, 0, 327689, 49, 0, 327690, 39, 0, 327691, 38, 0, 327692, 43, 0, 327693, 42, 0, 327694, 50, 0, 327695, 11, 0, 393216, 12, 0, 393217, 43, 0, 393218, 39, 0, 393219, 51, 0, 393220, 48, 0, 393221, 43, 0, 393222, 49, 0, 393223, 49, 0, 393224, 51, 0, 393225, 54, 0, 393226, 51, 0, 393227, 51, 0, 393228, 51, 0, 393229, 50, 0, 393230, 41, 0, 393231, 11, 0, 458752, 12, 0, 458753, 51, 0, 458754, 51, 0, 458755, 37, 0, 458756, 51, 0, 458757, 51, 0, 458758, 40, 0, 458759, 52, 0, 458760, 49, 0, 458761, 40, 0, 458762, 51, 0, 458763, 50, 0, 458764, 50, 0, 458765, 50, 0, 458766, 58, 0, 458767, 11, 0, 524288, 12, 0, 524289, 51, 0, 524290, 51, 0, 524291, 51, 0, 524292, 44, 0, 524293, 48, 0, 524294, 51, 0, 524295, 54, 0, 524296, 50, 0, 524297, 48, 0, 524298, 51, 0, 524299, 51, 0, 524300, 51, 0, 524301, 51, 0, 524302, 37, 0, 524303, 11, 0, 589824, 10, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 18, 0 )
+tile_data = PoolIntArray( 65536, 86, 0, 65537, 9, 0, 65538, 9, 0, 65539, 85, 0, 65541, 86, 0, 65542, 9, 0, 65543, 9, 0, 65544, 9, 0, 65545, 9, 0, 65546, 9, 0, 65547, 9, 0, 65548, 9, 0, 65549, 9, 0, 65550, 9, 0, 65551, 85, 0, 65552, 86, 0, 65553, 94, 0, 65554, 94, 0, 65555, 94, 0, 65556, 94, 0, 65557, 94, 0, 65558, 94, 0, 65559, 94, 0, 65560, 94, 0, 65561, 94, 0, 65562, 94, 0, 65563, 94, 0, 65564, 94, 0, 65565, 85, 0, 131072, 87, 0, 131073, 73, 0, 131074, 70, 0, 131075, 93, 0, 131076, 94, 0, 131077, 89, 0, 131078, 73, 0, 131079, 73, 0, 131080, 68, 0, 131081, 72, 0, 131082, 69, 0, 131083, 75, 0, 131084, 75, 0, 131085, 68, 0, 131086, 74, 0, 131087, 88, 0, 131088, 87, 0, 131089, 6, 0, 131090, 6, 0, 131091, 6, 0, 131092, 6, 0, 131093, 6, 0, 131094, 6, 0, 131095, 6, 0, 131096, 6, 0, 131097, 6, 0, 131098, 6, 0, 131099, 6, 0, 131100, 6, 0, 131101, 88, 0, 196608, 87, 0, 196609, 68, 0, 196610, 80, 0, 196611, 68, 0, 196612, 72, 0, 196613, 68, 0, 196614, 69, 0, 196615, 70, 0, 196616, 68, 0, 196617, 68, 0, 196618, 71, 0, 196619, 73, 0, 196620, 75, 0, 196621, 77, 0, 196622, 75, 0, 196623, 88, 0, 196624, 87, 0, 196625, 6, 0, 196626, 4, 0, 196627, 6, 0, 196628, 6, 0, 196629, 6, 0, 196630, 6, 0, 196631, 6, 0, 196632, 6, 0, 196633, 6, 0, 196634, 6, 0, 196635, 4, 0, 196636, 6, 0, 196637, 88, 0, 262144, 87, 0, 262145, 76, 0, 262146, 68, 0, 262147, 73, 0, 262148, 68, 0, 262149, 68, 0, 262150, 77, 0, 262151, 68, 0, 262152, 77, 0, 262153, 68, 0, 262154, 68, 0, 262155, 65, 0, 262156, 75, 0, 262157, 75, 0, 262158, 69, 0, 262159, 93, 0, 262160, 89, 0, 262161, 6, 0, 262162, 6, 0, 262163, 6, 0, 262164, 6, 0, 262165, 6, 0, 262166, 7, 0, 262167, 6, 0, 262168, 6, 0, 262169, 6, 0, 262170, 6, 0, 262171, 6, 0, 262172, 6, 0, 262173, 88, 0, 327680, 87, 0, 327681, 68, 0, 327682, 68, 0, 327683, 82, 0, 327684, 77, 0, 327685, 80, 0, 327686, 68, 0, 327687, 68, 0, 327688, 80, 0, 327689, 68, 0, 327690, 80, 0, 327691, 68, 0, 327692, 76, 0, 327693, 75, 0, 327694, 76, 0, 327695, 73, 0, 327696, 74, 0, 327697, 6, 0, 327698, 6, 0, 327699, 6, 0, 327700, 6, 0, 327701, 6, 0, 327702, 6, 0, 327703, 6, 0, 327704, 6, 0, 327705, 6, 0, 327706, 6, 0, 327707, 6, 0, 327708, 6, 0, 327709, 88, 0, 393216, 87, 0, 393217, 76, 0, 393218, 65, 0, 393219, 68, 0, 393220, 68, 0, 393221, 68, 0, 393222, 68, 0, 393223, 68, 0, 393224, 68, 0, 393225, 77, 0, 393226, 68, 0, 393227, 68, 0, 393228, 68, 0, 393229, 68, 0, 393230, 69, 0, 393231, 83, 0, 393232, 84, 0, 393233, 6, 0, 393234, 6, 0, 393235, 7, 0, 393236, 6, 0, 393237, 6, 0, 393238, 4, 0, 393239, 6, 0, 393240, 6, 0, 393241, 6, 0, 393242, 6, 0, 393243, 6, 0, 393244, 7, 0, 393245, 88, 0, 458752, 87, 0, 458753, 68, 0, 458754, 68, 0, 458755, 81, 0, 458756, 74, 0, 458757, 77, 0, 458758, 73, 0, 458759, 76, 0, 458760, 68, 0, 458761, 68, 0, 458762, 71, 0, 458763, 73, 0, 458764, 70, 0, 458765, 70, 0, 458766, 75, 0, 458767, 88, 0, 458768, 87, 0, 458769, 6, 0, 458770, 6, 0, 458771, 6, 0, 458772, 6, 0, 458773, 6, 0, 458774, 7, 0, 458775, 6, 0, 458776, 6, 0, 458777, 6, 0, 458778, 6, 0, 458779, 6, 0, 458780, 6, 0, 458781, 88, 0, 524288, 87, 0, 524289, 68, 0, 524290, 68, 0, 524291, 71, 0, 524292, 68, 0, 524293, 68, 0, 524294, 78, 0, 524295, 68, 0, 524296, 68, 0, 524297, 68, 0, 524298, 68, 0, 524299, 68, 0, 524300, 68, 0, 524301, 68, 0, 524302, 68, 0, 524303, 88, 0, 524304, 87, 0, 524305, 6, 0, 524306, 6, 0, 524307, 6, 0, 524308, 6, 0, 524309, 6, 0, 524310, 6, 0, 524311, 6, 0, 524312, 6, 0, 524313, 6, 0, 524314, 6, 0, 524315, 6, 0, 524316, 6, 0, 524317, 88, 0, 589824, 95, 0, 589825, 92, 0, 589826, 92, 0, 589827, 92, 0, 589828, 92, 0, 589829, 92, 0, 589830, 92, 0, 589831, 92, 0, 589832, 92, 0, 589833, 92, 0, 589834, 92, 0, 589835, 92, 0, 589836, 92, 0, 589837, 92, 0, 589838, 92, 0, 589840, 95, 0, 589841, 92, 0, 589842, 92, 0, 589843, 92, 0, 589844, 92, 0, 589845, 92, 0, 589846, 92, 0, 589847, 92, 0, 589848, 92, 0, 589849, 92, 0, 589850, 92, 0, 589851, 92, 0, 589852, 92, 0 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="Shadows" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+collision_layer = 1024
+collision_mask = 1025
+occluder_light_mask = 1024
+format = 1
+tile_data = PoolIntArray( 131073, 8, 0, 131074, 9, 0, 131078, 8, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 9, 0, 131089, 8, 0, 131090, 0, 0, 131091, 0, 0, 131092, 0, 0, 131093, 0, 0, 131094, 0, 0, 131095, 0, 0, 131096, 0, 0, 131097, 0, 0, 131098, 0, 0, 131099, 0, 0, 131100, 9, 0, 196609, 1, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196622, 6, 0, 196625, 1, 0, 196636, 6, 0, 262145, 1, 0, 262158, 6, 0, 262161, 1, 0, 262172, 6, 0, 327681, 1, 0, 327695, 0, 0, 327696, 0, 0, 327708, 6, 0, 393217, 1, 0, 393230, 6, 0, 393233, 1, 0, 393244, 6, 0, 458753, 1, 0, 458766, 6, 0, 458769, 1, 0, 458780, 6, 0, 524289, 1, 0, 524302, 6, 0, 524305, 1, 0, 524316, 6, 0 )
+
+[node name="Brinbi" type="KinematicBody2D" parent="."]
 position = Vector2( 413.067, 351.802 )
 script = ExtResource( 23 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Brinbi"]
 position = Vector2( -1.60141, -6.93231 )
 scale = Vector2( 0.286962, 0.286962 )
-frames = SubResource( 3 )
+frames = SubResource( 4 )
 animation = "walk"
 frame = 1
 speed_scale = 2.0
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brinbi"]
 position = Vector2( -0.713196, 0.842926 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="pet" type="KinematicBody2D" parent="."]
+visible = false
 position = Vector2( 316.204, 358.748 )
 scale = Vector2( 0.286962, 0.286962 )
+collision_layer = 2
+collision_mask = 2
 script = ExtResource( 25 )
 
 [node name="Sprite" type="Sprite" parent="pet"]
@@ -839,44 +1391,108 @@ texture = ExtResource( 24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pet"]
 position = Vector2( 0, 4.11157 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
+
+[node name="Camera Scroller" type="Area2D" parent="."]
+position = Vector2( 1028.87, 352.861 )
+script = ExtResource( 33 )
+
+[node name="Camera2D" type="Camera2D" parent="Camera Scroller"]
+position = Vector2( -511.376, -48.0804 )
+current = true
+smoothing_enabled = true
+script = ExtResource( 34 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera Scroller"]
+position = Vector2( 19.2936, -4.72073 )
+shape = SubResource( 7 )
+
+[node name="Area2D" type="Area2D" parent="Camera Scroller"]
+position = Vector2( 33.941, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera Scroller/Area2D"]
+position = Vector2( -54.6882, 2.99661 )
+shape = SubResource( 8 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 540.889, 104.882 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 16.6855, -27.3642 )
-shape = SubResource( 6 )
+shape = SubResource( 9 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2( 279.464, 122.488 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2( 10.5627, -0.351898 )
-shape = SubResource( 7 )
+shape = SubResource( 10 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 position = Vector2( 30.4826, 243.719 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2( 3.1748, 68.2582 )
-shape = SubResource( 8 )
+shape = SubResource( 11 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
 position = Vector2( 514.173, 606.164 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 position = Vector2( 0.614807, 14.6502 )
-shape = SubResource( 9 )
+shape = SubResource( 12 )
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2( 996.506, 327.251 )
+position = Vector2( 1026.67, 514.455 )
+scale = Vector2( 2.06487, 0.491503 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
-shape = SubResource( 10 )
+position = Vector2( 0.384369, 37.1414 )
+shape = SubResource( 13 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2( 1026.67, 514.455 )
+scale = Vector2( 2.06487, 0.491503 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2( -0.358704, -659.988 )
+shape = SubResource( 14 )
 
 [node name="Bottom wall" type="TileMap" parent="."]
-tile_set = SubResource( 11 )
+light_mask = 6
+tile_set = SubResource( 15 )
+collision_layer = 6
+collision_mask = 6
 occluder_light_mask = 15
 format = 1
-tile_data = PoolIntArray( 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0 )
+tile_data = PoolIntArray( 393231, 1, 0, 393232, 2, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0 )
+
+[node name="Area2D" parent="." instance=ExtResource( 30 )]
+light_mask = 7
+position = Vector2( 779.719, 245.817 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 1753.4, 336.397 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -2.99646, 25.4712 )
+shape = SubResource( 16 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 25 )
+playing = true
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2( 781, 245 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2( -3.36743, 3.92859 )
+scale = Vector2( 1, 1.4973 )
+shape = SubResource( 26 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 36 )]
+position = Vector2( 1754.1, 345.442 )
+scale = Vector2( 1.55645, 1.0668 )
+
+[connection signal="body_entered" from="Camera Scroller" to="Camera Scroller/Camera2D" method="_on_Door_body_entered"]
+[connection signal="body_entered" from="Camera Scroller/Area2D" to="Camera Scroller/Camera2D" method="_on_Area2D_body_entered"]

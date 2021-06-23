@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 export (int) var speed = 200
 
-onready var player = get_node("../KinematicBody2D")
+onready var player = get_node("../Brinbi")
 var target = Vector2()
 var velocity = Vector2()
 
