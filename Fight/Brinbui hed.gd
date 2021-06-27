@@ -18,3 +18,4 @@ func _ready():
 
 func _on_pleyel_helth_value_changed(value):
 	$"AnimationPlayer".play("hit")
+	

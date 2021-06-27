@@ -2,7 +2,6 @@ extends Control
 
 
 
-var turn = false
 var dialog = [
 	'There is nothing ahead you haven`t seen before',
 	'proceed at your own risk.'
@@ -16,9 +15,9 @@ func _ready():
 func _physics_process(_delta):
 	 $"Indic".visible = finished
 	 
-	 if Input.is_action_just_pressed("ui_accept") and turn == true:
+	 if Input.is_action_just_pressed("ui_accept"):
 		 load_dialog()
-	 
+		 
 
 func load_dialog():
 	if dialog_index < dialog.size():
@@ -38,18 +37,19 @@ func load_dialog():
 	else:
 		queue_free()
 	dialog_index += 1
-
+	
 	
 
 func _on_Tween_tween_completed(object, key):
 	finished = true
-	turn = true
+	
+
 
 
 
 
 func _on_Tween_tween_step(object, key, elapsed, value):
-	$Voice1.play()
+	 $Voice1.play()
 
 
 

@@ -21,3 +21,8 @@ func _on_glok_button_down():
 
 
 
+
+
+func _on_pleyel_helth_value_changed(value):
+	$"AnimationPlayer".play("Hit")
+	$"../Ouch".play()

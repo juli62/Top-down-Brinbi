@@ -1480,6 +1480,7 @@ shape = SubResource( 16 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 25 )
+frame = 1
 playing = true
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="."]

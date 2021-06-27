@@ -17,4 +17,4 @@ func _ready():
 
 
 func _on_glok_button_down():
-	$"../../../AnimatedSprite2/enemi helth".set_value(0)
+	$"../../../enemi helth".set_value(0)
