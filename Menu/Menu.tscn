@@ -1,0 +1,154 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://Menu/Play2.png" type="Texture" id=1]
+[ext_resource path="res://Menu/PLay 1.png" type="Texture" id=2]
+[ext_resource path="res://Menu/Melody_4.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Tilemap/brinbi bak-export.png" type="Texture" id=4]
+[ext_resource path="res://Menu/Title.png" type="Texture" id=5]
+[ext_resource path="res://Menu/play3.png" type="Texture" id=6]
+[ext_resource path="res://Menu.gd" type="Script" id=7]
+[ext_resource path="res://RigidBody2D.gd" type="Script" id=8]
+[ext_resource path="res://TextureButton.gd" type="Script" id=9]
+[ext_resource path="res://Menu/AudioStreamPlayer2D.gd" type="Script" id=10]
+[ext_resource path="res://Avenixel-Regular.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Brinbi idle/ezgif.com-gif-maker.png" type="Texture" id=12]
+[ext_resource path="res://Brinbi idle/ezgif.com-gif-maker (1).png" type="Texture" id=13]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (6).png" type="Texture" id=14]
+[ext_resource path="res://Brinbi idle/ezgif.com-gif-maker (2).png" type="Texture" id=15]
+[ext_resource path="res://Brinbi idle/ezgif.com-gif-maker (3).png" type="Texture" id=16]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (7).png" type="Texture" id=17]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (10).png" type="Texture" id=18]
+[ext_resource path="res://Brinbi idle/ezgif.com-gif-maker (4).png" type="Texture" id=19]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (12).png" type="Texture" id=20]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (9).png" type="Texture" id=21]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (5).png" type="Texture" id=22]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (11).png" type="Texture" id=23]
+[ext_resource path="res://run anim/ezgif.com-gif-maker (8).png" type="Texture" id=24]
+[ext_resource path="res://Menu/Platformi.png" type="Texture" id=25]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=26]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 11 )
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 70.1287
+height = 236.766
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "walk",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 18.6668, 25.3799 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="brinbi bak-export" type="Sprite" parent="."]
+position = Vector2( 571.818, 532.715 )
+texture = ExtResource( 4 )
+
+[node name="Platformi2" type="Sprite" parent="."]
+position = Vector2( 100.169, 297.362 )
+rotation = 3.14159
+scale = Vector2( 0.977227, 0.977227 )
+texture = ExtResource( 25 )
+
+[node name="Platformi" type="Sprite" parent="."]
+position = Vector2( 897.333, 530.694 )
+scale = Vector2( 1.68, 1.68 )
+texture = ExtResource( 25 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Platformi"]
+margin_left = -57.8091
+margin_top = -21.3359
+margin_right = 52.1909
+margin_bottom = 67.6641
+rect_scale = Vector2( 1.04444, 0.800208 )
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Game by: [tornado radius=5 freq=2]Julian[/tornado]
+and no one else 
+			:("
+text = "Game by: Julian
+and no one else 
+			:("
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 330.515, 3.3277 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 629.223, 5.06439 )
+
+[node name="DampedSpringJoint2D2" type="DampedSpringJoint2D" parent="."]
+position = Vector2( 629.223, 5.06439 )
+node_a = NodePath("../StaticBody2D2")
+node_b = NodePath("../RigidBody2D")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+position = Vector2( 332.66, 8.12979 )
+node_a = NodePath("../StaticBody2D")
+node_b = NodePath("../RigidBody2D")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." groups=[
+"pickable",
+]]
+position = Vector2( 496.199, 8.72221 )
+input_pickable = true
+mass = 41.33
+script = ExtResource( 8 )
+
+[node name="Title" type="Sprite" parent="RigidBody2D"]
+position = Vector2( 0.474335, 1.17711 )
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+rotation = 1.57541
+shape = SubResource( 1 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 390.576
+margin_top = 346.736
+margin_right = 576.576
+margin_bottom = 412.736
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 6 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+script = ExtResource( 10 )
+
+[node name="Brinbi" type="KinematicBody2D" parent="."]
+position = Vector2( 104.816, 291.221 )
+script = ExtResource( 26 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Brinbi"]
+position = Vector2( -1.60141, -6.93231 )
+scale = Vector2( 0.286962, 0.286962 )
+frames = SubResource( 3 )
+animation = "walk"
+speed_scale = 2.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brinbi"]
+position = Vector2( -0.713196, 0.842926 )
+shape = SubResource( 4 )
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]

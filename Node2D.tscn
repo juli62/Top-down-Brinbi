@@ -1206,7 +1206,10 @@ load_path = "res://.import/brinbi bak-export.png-0f39192af41acfd8cf994d12bfeedd9
 11/shapes = [  ]
 11/z_index = 0
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="CircleShape2D" id=4]
+radius = 39.2348
+
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 6 ) ],
 "loop": true,
@@ -1219,11 +1222,8 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 18.6668, 25.3799 )
-
-[sub_resource type="CircleShape2D" id=6]
-radius = 39.2348
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 10.7457, 38.6545 )
@@ -1360,25 +1360,7 @@ occluder_light_mask = 1024
 format = 1
 tile_data = PoolIntArray( 131073, 8, 0, 131074, 9, 0, 131078, 8, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 9, 0, 131089, 8, 0, 131090, 0, 0, 131091, 0, 0, 131092, 0, 0, 131093, 0, 0, 131094, 0, 0, 131095, 0, 0, 131096, 0, 0, 131097, 0, 0, 131098, 0, 0, 131099, 0, 0, 131100, 9, 0, 196609, 1, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196622, 6, 0, 196625, 1, 0, 196636, 6, 0, 262145, 1, 0, 262158, 6, 0, 262161, 1, 0, 262172, 6, 0, 327681, 1, 0, 327695, 0, 0, 327696, 0, 0, 327708, 6, 0, 393217, 1, 0, 393230, 6, 0, 393233, 1, 0, 393244, 6, 0, 458753, 1, 0, 458766, 6, 0, 458769, 1, 0, 458780, 6, 0, 524289, 1, 0, 524302, 6, 0, 524305, 1, 0, 524316, 6, 0 )
 
-[node name="Brinbi" type="KinematicBody2D" parent="."]
-position = Vector2( 413.067, 351.802 )
-script = ExtResource( 23 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Brinbi"]
-position = Vector2( -1.60141, -6.93231 )
-scale = Vector2( 0.286962, 0.286962 )
-frames = SubResource( 4 )
-animation = "walk"
-frame = 1
-speed_scale = 2.0
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Brinbi"]
-position = Vector2( -0.713196, 0.842926 )
-shape = SubResource( 5 )
-
 [node name="pet" type="KinematicBody2D" parent="."]
-visible = false
 position = Vector2( 316.204, 358.748 )
 scale = Vector2( 0.286962, 0.286962 )
 collision_layer = 2
@@ -1391,6 +1373,23 @@ texture = ExtResource( 24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pet"]
 position = Vector2( 0, 4.11157 )
+shape = SubResource( 4 )
+
+[node name="Brinbi" type="KinematicBody2D" parent="."]
+position = Vector2( 413.067, 351.802 )
+script = ExtResource( 23 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Brinbi"]
+position = Vector2( -1.60141, -6.93231 )
+scale = Vector2( 0.286962, 0.286962 )
+frames = SubResource( 5 )
+animation = "walk"
+frame = 6
+speed_scale = 2.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brinbi"]
+position = Vector2( -0.713196, 0.842926 )
 shape = SubResource( 6 )
 
 [node name="Camera Scroller" type="Area2D" parent="."]
@@ -1480,7 +1479,7 @@ shape = SubResource( 16 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 25 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="."]
